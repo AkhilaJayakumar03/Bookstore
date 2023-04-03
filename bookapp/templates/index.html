@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <style>
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4f163060e5.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <div class="container-fluid text"  style="background-image: url({% static 'bookapp/images/oip1.jpeg' %});background-size:cover;height:600px;width:auto;">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="" style="color:orange"><i class="fa-solid fa-book"></i>&nbsp𝔹𝕠𝕠𝕜 𝕊𝕥𝕠𝕣𝕖</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="color:white"><i class="fa-solid fa-bars"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item" >
+                    <a class="nav-link text-light" href="http://127.0.0.1:8000/bookapp/home/">Home</a>
+                   <li class="nav-item dropdown">
+                    <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Register/Login
+                    </a>
+                    <ul class="dropdown-menu"  aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="http://127.0.0.1:8000/bookapp/register/">Register</a></li>
+                      <li><a class="dropdown-item" href="http://127.0.0.1:8000/bookapp/login/">Login</a></li>
+                    </ul>
+                  </li>
+
+                </ul>
+                <form class="d-flex">
+
+                    <a  href="http://127.0.0.1:8000/bookapp/userprofile/" class="btn  text-light" type="button" >
+                      <i class="fa-solid fa-user fa-1x"></i>
+                    </a>
+                &nbsp;&nbsp;&nbsp;
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn text-light"><i class=" fa-sharp fa-solid fa-magnifying-glass fa-1x"></i></button>
+
+                </form>
+              </div>
+            </div>
+    </nav>
+    <br><br><br>
+    </div>
+    <br><br>
+<div class="container_fluid shadow p-4 m-3" style="background-color:whitesmoke">
+    <div class="row" style="margin-left:100px">
+        <!-- first card -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card" style="width: 15rem">
+                <img src="{% static 'bookapp/images/book1.jpg' %}" height="300px" width="300px" class="card-img-top p-4" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title">Reading on the World</h6>
+
+                </div>
+              </div>
+        </div>
+        <!-- second -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card" style="width: 15rem">
+                <img src="{% static 'bookapp/images/book2.jpg' %}" height="300px" width="300px"  class="card-img-top p-4" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title">The Catcher in the Rye</h6>
+
+                </div>
+              </div>
+        </div>
+        <!-- third -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card" style="width: 15rem">
+                <img src="{% static 'bookapp/images/book3.jpg' %}" height="300px" width="300px"  class="card-img-top p-4" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title">Little Black Book</h6>
+
+                 </div>
+              </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card" style="width: 15rem">
+                <img src="{% static 'bookapp/images/book4.jpg' %}" height="300px" width="300px"  class="card-img-top p-4" alt="...">
+                <div class="card-body">
+                  <h6 class="card-title">Take On The Risk</h6>
+
+                </div>
+              </div>
+        </div>
+      </div>
+    <br>
+        <div class="row" style="margin-left:100px">
+            <!-- first card -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 15rem">
+                    <img src="{% static 'bookapp/images/book5.jpg' %}" height="300px" width="300px" class="card-img-top p-4" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title">Absteact On Background</h6>
+
+                    </div>
+                  </div>
+            </div>
+            <!-- second -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 15rem">
+                    <img src="{% static 'bookapp/images/book6.jpg' %}" height="300px" width="300px"  class="card-img-top p-4" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title">Find The Wave Book</h6>
+
+                    </div>
+                  </div>
+            </div>
+            <!-- third -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 15rem">
+                    <img src="{% static 'bookapp/images/book7.jpg' %}" height="300px" width="300px"  class="card-img-top p-4" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title">See the More Story</h6>
+
+                     </div>
+                  </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 15rem">
+                    <img src="{% static 'bookapp/images/book8.jpg' %}" height="300px" width="300px"  class="card-img-top p-4" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-title">The Wikde Book</h6>
+                    </div>
+                  </div>
+            </div>
+
+   </div>
+<br>
+            <div class="row" style="margin-left:100px">
+                <!-- first card -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card" style="width: 15rem">
+                        <img src="{% static 'bookapp/images/book9.jpg' %}" height="300px" width="300px" class="card-img-top p-4" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title"> The Crucial Decade</h6>
+
+                        </div>
+                      </div>
+                </div>
+                <!-- second -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card" style="width: 15rem">
+                        <img src="{% static 'bookapp/images/book10.jpg' %}" height="300px" width="300px"  class="card-img-top p-4" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Conversion Erik Routley</h6>
+
+                        </div>
+                      </div>
+                </div>
+                <!-- third -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card" style="width: 15rem">
+                        <img src="{% static 'bookapp/images/book11.jpg' %}" height="300px" width="300px"  class="card-img-top p-4" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">The Leo Dominica</h6>
+
+                         </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card" style="width: 15rem">
+                        <img src="{% static 'bookapp/images/book12.jpg' %}" height="300px" width="300px"  class="card-img-top p-4" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">By The Editbeth Jat</h6>
+                      >
+                        </div>
+                      </div>
+                </div>
+            </div>
+</div>
+    <br>
+<div class="container_fluid shadow p-4 m-3" style="background-color:whitesmoke">
+<h2 class="px-3">Similar Books</h2>
+    <hr>
+    <span><img src="{% static 'bookapp/images/book13.jpg' %}" height="200px" width="200px"></span>
+    <span><img src="{% static 'bookapp/images/book14.jpg' %}" height="200px" width="200px"></span>
+    <span><img src="{% static 'bookapp/images/book15.jpg' %}" height="200px" width="200px"></span>
+    <span><img src="{% static 'bookapp/images/book16.jpg' %}" height="200px" width="200px"></span>
+    <span><img src="{% static 'bookapp/images/book17.jpg' %}" height="200px" width="200px"></span>
+    <span><img src="{% static 'bookapp/images/book18.jpg' %}" height="200px" width="200px"></span>
+    <span><img src="{% static 'bookapp/images/book19.jpg' %}" height="200px" width="200px"></span>
+</div>
+    <br>
+<div class="container_fluid shadow p-4 m-3"  style="background-color:whitesmoke">
+<h2 class="px-3">Trendy Books</h2>
+    <hr>
+    <span><img src="{% static 'bookapp/images/book23.jpg' %}" height="200px" width="200px"></span>
+    <span><img src="{% static 'bookapp/images/book21.jpg' %}" height="200px" width="200px"></span>
+    <span><img src="{% static 'bookapp/images/book22.jpg' %}" height="200px" width="200px"></span>
+    <span><img src="{% static 'bookapp/images/book20.jpg' %}" height="200px" width="200px"></span>
+    <span><img src="{% static 'bookapp/images/book24.jpg' %}" height="200px" width="200px"></span>
+    <span><img src="{% static 'bookapp/images/book25.jpg' %}" height="200px" width="200px"></span>
+    <span><img src="{% static 'bookapp/images/book7.jpg' %}" height="200px" width="200px"></span>
+</div>
+    <footer>
+   <h5 align="center" style="background-color:rgb(224, 223, 223)" class="p-3">Copyright 2023 Bookstore All Rights Reserved.</h5>
+</footer>
+</body>
+</html>

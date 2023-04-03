@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <style>
+     .navbar{
+          background-color:orange;
+        color:white;
+      }
+      #s{
+      margin-top:100px;
+      }
+
+
+  </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4f163060e5.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+
+          <div>
+<!--            <div class="container-fluid" id="l">-->
+<!--<h1 class="p-5">{{username}}!</h1>-->
+<!-- <h4 style="float:right">Logout<span><a href="http://127.0.0.1:8000/bookapp/logout/" style="color:white"><i class="fa-sharp fa-solid fa-right-from-bracket p-2"></i></a></span></h4>-->
+<!--            </div>-->
+<nav class="navbar">
+  <div class="container-fluid">
+    <h1 class="p-4">{{username}}!</h1>
+    <div class="d-flex">
+      <h4>Logout<a href="http://127.0.0.1:8000/bookapp/logout/" style="color:white"><i class="fa-sharp fa-solid fa-right-from-bracket p-2"></i></a></h4>
+    </div>
+  </div>
+</nav>
+    <a href="http://127.0.0.1:8000/bookapp/index/" class="btn text-warning" style="float:right"><i class="fa-solid fa-house fa-1x"></i></a>
+
+<!--          <div class="offcanvas offcanvas-start text-white" style="background-color: orange;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">-->
+<!--                <div class="offcanvas-header">-->
+<!--                  <h5 id="offcanvasRightLabel">{{username}}</h5>-->
+<!--                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>-->
+<!--                </div>-->
+<!--                <div class="offcanvas-body">-->
+<!--                 <ul type="none">-->
+<!--                  <li> <a href="home.html" class="i"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home</a></li><br>-->
+<!--                   <li><a href="home.html" class="i"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;User</a></li><br>-->
+<!--                  <li><a href="home.html" class="i"><i class="fa-solid fa-heart"></i>&nbsp;&nbsp;Whishlist</a></li><br>-->
+<!--                  <li><a href="home.html" class="i"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;Cart</a></li><br>-->
+<!--                     <li><a href="http://127.0.0.1:8000/bookapp/logout/" class="i"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Logout</a></li><br>-->
+
+<!--                  </ul>-->
+<!--                </div>-->
+<!--              </div>-->
+
+            <center>
+
+                <div id="s">
+
+<div class="row">
+    <div class="col">
+                  <div class="card" style="width: 20rem;">
+                    <img src="{% static 'bookapp/images/OIP (3).jpeg' %}" height="200px" width="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="http://127.0.0.1:8000/bookapp/bookupload/" class="btn" style="background-color:orange;color:white;">Add Book</a>
+                    </div>
+                  </div>
+</div>
+      <div class="col">
+                  <div class="card" style="width: 20rem;">
+                    <img src="{% static 'bookapp/images/OIP (2).jpeg' %}" height="200px" width="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="http://127.0.0.1:8000/bookapp/bookdownload/" class="btn" style="background-color:orange;color:white;">Download</a>
+                    </div>
+                  </div>
+                </div>
+</div>
+</div>
+            </center>
+</div>
+</body>
+</html>
