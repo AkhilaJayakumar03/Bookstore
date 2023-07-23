@@ -1,4 +1,6 @@
 import os
+
+from django.contrib import messages
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.views import generic
@@ -33,16 +35,13 @@ class login(generic.View):
                     if un == i.username and ps == i.password:
                         return redirect(userprofile)
                 else:
-                    return HttpResponse("login failed")
+                    return HttpResponse("Login Failed")
             else:
                 return HttpResponse("Invalid Credentials")
 
 def userprofile(request):
     username=request.session['username']
     return render(request, "userprofile.html",{'username':username})
-
-
-
 
 class bookupload(generic.CreateView):
     form_class=bookupform
@@ -71,7 +70,6 @@ class bookupload(generic.CreateView):
             fl.append(str(bookpdf).split('/')[-1])
         mylist = zip(nm, ath, dt, img, fl,uid)
         return render(request,self.template_name,{'mylist': mylist})
-
 
 class home(generic.CreateView):
     form_class=bookupform
@@ -150,5 +148,5 @@ class bookdownload(generic.ListView):
 
 
 class lgview(LogoutView):
-    next_page = reverse_lazy('index') #url name
+    next_page = reverse_lazy('login') #url name
 
